@@ -16,7 +16,6 @@ public class BaseActivity extends AppCompatActivity {
 
     /**
      * 使用自己设置的语言--核心
-     *
      * @param newBase
      */
     @Override
