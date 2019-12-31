@@ -1,6 +1,7 @@
 # Android多语言切换
 
 # 效果图
+
 [![](https://raw.githubusercontent.com/zxyUncle/zxyMultilingual/master/app/mul.gif)](https://raw.githubusercontent.com/zxyUncle/zxyMultilingual/master/app/mul.gif)
 
 [![](https://jitpack.io/v/zxyUncle/zxyMultilingual.svg)](https://jitpack.io/#zxyUncle/zxyMultilingual)
