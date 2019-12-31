@@ -43,13 +43,15 @@ Step 2. Add the dependency
     MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_CHINESE_SIMPLIFIED)
 其中：LanguageType.LANGUAGE_CHINESE_SIMPLIFIED在LanguageType类中
 
-    public class LanguageType {
+
+public class LanguageType {
     public static final int LANGUAGE_FOLLOW_SYSTEM = 0; //跟随系统
     public static final int LANGUAGE_EN = 1;    //英文
     public static final int LANGUAGE_CHINESE_SIMPLIFIED = 2; //简体
     public static final int LANGUAGE_CHINESE_TRADITIONAL = 3;  //香港台湾繁体
     public static final int LANGUAGE_JAPANESS = 4;  //日语
 }
+
 
 
 
