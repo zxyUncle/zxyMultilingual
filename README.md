@@ -29,7 +29,7 @@ Step 2. Add the dependency
 
 
 ## 使用：
-一、使用依赖库，有局限，只有简体、繁体、英文、日文
+一、使用依赖库，有局限，只有简体、繁体、英文、日文      
 二、使用Module，下载项目，将项目的module加入到自己的项目
  1. 在你的Application中使用`  MultiLanguageUtil.init(this);`
  2. 在你的BaseActivity总加入
