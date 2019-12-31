@@ -8,36 +8,36 @@
 
 Gradle
 -----
-Step 1    
-	
+Step 1
 
-     allprojects {  
-		repositories {    
-			...    
-			maven { url 'https://jitpack.io' }     
-		}    
-	}    
 
-Step 2. Add the dependency    
-##### 全部依赖模块   
-  
+     allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+Step 2. Add the dependency
+##### 全部依赖模块
+
          implementation 'com.github.zxyUncle:zxyMultilingual:Tag'
-    
 
 
 
 
-##使用：
+
+## 使用：
 一、使用依赖库，有局限，只有简体、繁体、英文、日文
 二、使用Module，下载项目，将项目的module加入到自己的项目
  1. 在你的Application中使用`  MultiLanguageUtil.init(this);`
- 2. 在你的BaseActivity总加入     
+ 2. 在你的BaseActivity总加入
 
      @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(MultiLanguageUtil.attachBaseContext(newBase));
     }
- 3. 更新本项目本地记录的语言：  
+ 3. 更新本项目本地记录的语言：
 
     MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_CHINESE_SIMPLIFIED)
 其中：LanguageType.LANGUAGE_CHINESE_SIMPLIFIED在LanguageType类中
@@ -50,11 +50,11 @@ Step 2. Add the dependency
     public static final int LANGUAGE_JAPANESS = 4;  //日语
 }
 
- 
 
- 
- 
-##提示：
+
+
+
+## 提示：
 
  1. 更换语言之后必须把所有Activity都finish掉，不然有些界面还是之前的语言
  2. 如果需要用其他比如非洲语言，那么只需要把项目下载下来，修改内部module中的两点：       
