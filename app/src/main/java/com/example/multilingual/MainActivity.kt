@@ -1,12 +1,56 @@
 package com.example.multilingual
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import com.zxy.zxymultilingual.LanguageType
+import com.zxy.zxymultilingual.MultiLanguageUtil
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    /**
+     * 中文
+     */
+    fun onChinese(view: View) {
+        MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_CHINESE_SIMPLIFIED)
+        finishStartActiivty()
+    }
+
+    /**
+     * 繁体
+     */
+    fun onComplex(view: View) {
+        MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_CHINESE_TRADITIONAL)
+        finishStartActiivty()
+    }
+
+    /**
+     * 英文
+     */
+    fun onEnglish(view: View) {
+        MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_EN)
+        finishStartActiivty()
+    }
+
+    /**
+     * 日语
+     */
+    fun onJapanese(view: View) {
+        MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_JAPANESS)
+        finishStartActiivty()
+    }
+
+    /**'
+     * 跳转activity
+     */
+    fun finishStartActiivty() {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
+    }
+
 }
