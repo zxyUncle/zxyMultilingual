@@ -33,7 +33,7 @@ public class CommSharedUtil {
     public  void putInt(String key, int value) {
         Editor edit = sharedPreferences.edit();
         edit.putInt(key, value);
-        edit.apply();
+        edit.commit();
     }
 
     public  int getInt(String key) {
@@ -44,7 +44,7 @@ public class CommSharedUtil {
     public  void putString(String key, String value) {
         Editor edit = sharedPreferences.edit();
         edit.putString(key, value);
-        edit.apply();
+        edit.commit();
     }
 
 
@@ -56,7 +56,7 @@ public class CommSharedUtil {
     public  void putBoolean(String key, boolean value) {
         Editor edit = sharedPreferences.edit();
         edit.putBoolean(key, value);
-        edit.apply();
+        edit.commit();
     }
 
 
@@ -71,7 +71,7 @@ public class CommSharedUtil {
     public  void remove(String key) {
         Editor edit = sharedPreferences.edit();
         edit.remove(key);
-        edit.apply();
+        edit.commit();
     }
 
 }
