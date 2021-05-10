@@ -2,6 +2,7 @@ package com.zxy.zxymultilingual;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
@@ -45,6 +46,17 @@ public class MultiLanguageUtil {
 
     private MultiLanguageUtil(Context context) {
         this.mContext = context;
+    }
+
+    /**
+     * 跳转
+     * @param mContext
+     * @param intent
+     */
+    public void newIntent(Context mContext,Intent intent){
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        mContext.startActivity(intent);
+        System.exit(0);
     }
 
     /**
