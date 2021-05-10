@@ -69,7 +69,7 @@ public class MultiLanguageUtil {
      *
      * @return
      */
-    private Locale getLanguageLocale() {
+    public Locale getLanguageLocale() {
         int languageType = CommSharedUtil.getInstance(mContext).getInt(MultiLanguageUtil.SAVE_LANGUAGE, 0);
         if (languageType == LanguageType.LANGUAGE_FOLLOW_SYSTEM) {
             Locale sysLocale = getSysLocale();
