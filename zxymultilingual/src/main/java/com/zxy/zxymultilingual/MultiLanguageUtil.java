@@ -136,6 +136,7 @@ public class MultiLanguageUtil {
 
 
     public static Context attachBaseContext(Context context) {
+        init(context);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             return createConfigurationResources(context);
         } else {
