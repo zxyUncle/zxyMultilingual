@@ -14,7 +14,11 @@
         android:padding="10dp"
         android:text="@string/hollo"
         android:textSize="30sp" />
-
+    <Button
+        android:onClick="onSystem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统" />
     <Button
         android:onClick="onChinese"
         android:layout_width="match_parent"
@@ -37,4 +41,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="繁体" />
+    <Button
+        android:onClick="onArabic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="阿拉伯语" />
 </LinearLayout>

@@ -7,12 +7,25 @@ import com.zxy.zxymultilingual.LanguageType
 import com.zxy.zxymultilingual.MultiLanguageUtil
 
 class MainActivity : BaseActivity() {
+    /**'
+     * 跳转activity
+     */
+    private fun finishStartActiivty() {
+        MultiLanguageUtil.getInstance().newIntent(this,Intent(this, MainActivity::class.java))
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
 
+    /**
+     * 系统
+     */
+    fun onSystem(view: View) {
+        MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_FOLLOW_SYSTEM)
+        finishStartActiivty()
+    }
     /**
      * 中文
      */
@@ -44,13 +57,14 @@ class MainActivity : BaseActivity() {
         MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_JAPANESS)
         finishStartActiivty()
     }
-
-    /**'
-     * 跳转activity
+    /**
+     * 日语
      */
-    fun finishStartActiivty() {
-        startActivity(Intent(this, MainActivity::class.java))
-        finish()
+    fun onArabic(view: View) {
+        MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_ARABIC)
+        finishStartActiivty()
     }
+
+
 
 }

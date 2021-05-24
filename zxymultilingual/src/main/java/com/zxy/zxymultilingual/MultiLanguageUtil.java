@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.LocaleList;
+import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
@@ -94,11 +95,18 @@ public class MultiLanguageUtil {
             return Locale.TRADITIONAL_CHINESE;
         } else if (languageType == LanguageType.LANGUAGE_JAPANESS) {
             return Locale.JAPAN;
+        } else if(languageType == LanguageType.LANGUAGE_ARABIC){
+            String languageToLoad  = "ar"; // your language
+            Locale locale = new Locale(languageToLoad);
+            Locale.setDefault(locale);
+            return locale;
         }
         getSystemLanguage(getSysLocale());
         Log.e(TAG, "getLanguageLocale" + languageType + languageType);
         return Locale.SIMPLIFIED_CHINESE;
     }
+
+
 
     /**
      * 获取当前语言
