@@ -64,6 +64,13 @@ class MainActivity : BaseActivity() {
         MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_ARABIC)
         finishStartActiivty()
     }
+    /**
+     * 法语
+     */
+    fun onFrench(view: View) {
+        MultiLanguageUtil.getInstance().updateLanguage(LanguageType.LANGUAGE_FRENCH)
+        finishStartActiivty()
+    }
 
 
 

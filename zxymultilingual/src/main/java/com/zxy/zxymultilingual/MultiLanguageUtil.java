@@ -95,6 +95,8 @@ public class MultiLanguageUtil {
             return Locale.TRADITIONAL_CHINESE;
         } else if (languageType == LanguageType.LANGUAGE_JAPANESS) {
             return Locale.JAPAN;
+        } else if (languageType == LanguageType.LANGUAGE_FRENCH) {
+            return Locale.FRENCH;
         } else if(languageType == LanguageType.LANGUAGE_ARABIC){
             String languageToLoad  = "ar"; // your language
             Locale locale = new Locale(languageToLoad);

@@ -15,4 +15,5 @@ public class LanguageType {
     public static final int LANGUAGE_CHINESE_TRADITIONAL = 3;  //香港台湾繁体
     public static final int LANGUAGE_JAPANESS = 4;  //日语
     public static final int LANGUAGE_ARABIC= 5;  //阿拉伯语
+    public static final int LANGUAGE_FRENCH= 6;  //法语
 }

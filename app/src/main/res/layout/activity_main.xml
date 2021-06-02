@@ -46,4 +46,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="阿拉伯语" />
+    <Button
+        android:onClick="onFrench"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="法语" />
 </LinearLayout>
