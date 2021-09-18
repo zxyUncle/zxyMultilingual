@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">zxyMultilingual</string>
-	<string name="hollo">私は大バカです</string>
+	<string name="zxy_hollo">私は大バカです</string>
 </resources>

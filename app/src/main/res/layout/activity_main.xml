@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="10dp"
-        android:text="@string/hollo"
+        android:text="@string/zxy_hollo"
         android:textSize="30sp" />
     <Button
         android:onClick="onSystem"

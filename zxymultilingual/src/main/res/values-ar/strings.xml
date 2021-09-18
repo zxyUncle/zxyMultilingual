@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">zxyMultilingual</string>
-	<string name="hollo">أنا أحمق كبير</string>
+	<string name="zxy_hollo">أنا أحمق كبير</string>
 </resources>
